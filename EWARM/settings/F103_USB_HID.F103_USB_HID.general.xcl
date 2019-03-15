@@ -1,0 +1,15 @@
+"D:\ProgramFiles\IAR\arm\bin\armproc.dll" 
+
+"D:\ProgramFiles\IAR\arm\bin\armstlink2.dll" 
+
+"E:\_VT\IAR\F103_USB_HID\EWARM\F103_USB_HID\Exe\F103_USB_HID.out" 
+
+--plugin="D:\ProgramFiles\IAR\arm\bin\armbat.dll" 
+
+--device_macro="D:\ProgramFiles\IAR\arm\config\debugger\ST\STM32F1xx.dmac" 
+
+--flash_loader="D:\ProgramFiles\IAR\arm\config\flashloader\ST\FlashSTM32F10xx8.board" 
+
+
+
+
