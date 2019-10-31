@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"D:\ProgramFiles\IAR\common\bin\cspybat" -f "E:\_VT\IAR\F103_USB_HID\EWARM\settings\F103_USB_HID.F103_USB_HID.general.xcl" --backend -f "E:\_VT\IAR\F103_USB_HID\EWARM\settings\F103_USB_HID.F103_USB_HID.driver.xcl" 
+"D:\ProgramFiles\IAR\common\bin\cspybat" -f "D:\_VT\IAR\F103_USB_HID\EWARM\settings\F103_USB_HID.F103_USB_HID.general.xcl" --backend -f "D:\_VT\IAR\F103_USB_HID\EWARM\settings\F103_USB_HID.F103_USB_HID.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"D:\ProgramFiles\IAR\common\bin\cspybat" -f "E:\_VT\IAR\F103_USB_HID\EWARM\settings\F103_USB_HID.F103_USB_HID.general.xcl" "--debug_file=%~1" --backend -f "E:\_VT\IAR\F103_USB_HID\EWARM\settings\F103_USB_HID.F103_USB_HID.driver.xcl" 
+"D:\ProgramFiles\IAR\common\bin\cspybat" -f "D:\_VT\IAR\F103_USB_HID\EWARM\settings\F103_USB_HID.F103_USB_HID.general.xcl" "--debug_file=%~1" --backend -f "D:\_VT\IAR\F103_USB_HID\EWARM\settings\F103_USB_HID.F103_USB_HID.driver.xcl" 
 
 @echo off 
 :end

@@ -222,8 +222,18 @@ int main(void)
       HID_CursorMove(STEPSIZE,-STEPSIZE);
       HAL_Delay(DELAYSTEPS);
     }*/
-    HID_CursorMove(rand() % 200 - 100,rand() % 200 - 100);
-    HAL_Delay(1000 + rand() % 4000);
+    /*HID_CursorMove(rand() % 200 - 100,rand() % 200 - 100);
+    HAL_Delay(1000 + rand() % 4000);*/
+    int8_t x = rand() % 255 - 127;
+    int8_t y = rand() % 255 - 127;
+    int step_num = 5;
+    int8_t stepx = x / step_num;
+    int8_t stepy = y / step_num;
+    for (int i = 0; i < step_num; i++)
+    {
+      HID_CursorMove(i*stepx,i*stepy);
+      HAL_Delay(100);
+    }
 #else
     HID_SendCombo(LMETA, 'r');
     HID_WriteString("notepad");
